@@ -1,11 +1,9 @@
 #include "get_next_line.h"
-#include <stdio.h>
-#include <fcntl.h>
 
 int	main(void)
 {
 	int		fd;
-	char	*str;
+	char	*out;
 
 	fd = open("file", O_RDONLY);
 	if (fd < 0)
@@ -35,4 +33,5 @@ int	main(void)
 	free (out);
 	/* out = get_next_line(fd); */
 	/* printf("%s\n", out); */
+	return (0);
 }
