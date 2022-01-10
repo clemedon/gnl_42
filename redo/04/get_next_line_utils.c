@@ -20,17 +20,20 @@ size_t	ft_strlen(char *str)
 
 char	*ft_strdup(char *str)
 {
-	char	*cpy;
 	int		i;
+	char	*cpy;
 
 	if (!str)
 		return (NULL);
 	cpy = malloc (sizeof(char) * (ft_strlen(str) + 1));
 	if (!cpy)
 		return (NULL);
-	i = -1;
-	while (str[++i])
+	i = 0;
+	while (str[i])
+	{
 		cpy[i] = str[i];
+		i++;
+	}
 	cpy[i] = '\0';
 	return (cpy);
 }
@@ -46,7 +49,7 @@ char	*ft_substr(char *str, size_t start, size_t len)
 	if (!sub)
 		return (NULL);
 	i = 0;
-	while (i < len && str[start + i]) // start
+	while (i < len && str[start + i]) // "i < len"
 	{
 		sub[i] = str[start + i];
 		i++;
@@ -74,8 +77,8 @@ char	*ft_strjoin(char *s1, char *s2)
 		s3[i] = s1[i];
 	i = -1;
 	while (s2[++i])
-		s3[i + (int)ft_strlen(s1)] = s2[i];
-	s3[i + (int)ft_strlen(s1)] = '\0';
+		s3[(int)ft_strlen(s1) + i] = s2[i];
+	s3[(int)ft_strlen(s1) + i] = '\0';
 	free (s1);
 	return (s3);
 }

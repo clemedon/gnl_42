@@ -6,13 +6,13 @@ static char	*ft_newtemp(char *temp)
 	size_t	i;
 
 	i = 0;
-	while (temp[i] && temp[i] != '\n') // check temp[i]
+	while (temp[i] && temp[i] != '\n')
 		i++;
 	if (temp[i] == '\0')
-		return (free(temp), NULL);
+		return (free (temp), NULL);
 	if (temp[i] == '\n')
 		i++;
-	new = ft_substr(temp, i, ft_strlen(temp) - i); // NOT STRDUP
+	new = ft_substr(temp, i, ft_strlen(temp) - i);
 	return (free(temp), new);
 }
 
@@ -43,13 +43,13 @@ char	*get_next_line(int fd)
 	r = 1;
 	while (r && !ft_has_nl(temp))
 	{
-		r = read(fd, buf, BUFFER_SIZE);
+		r = read (fd, buf, BUFFER_SIZE);
 		if (r < 0)
-			return (free(buf), NULL); // FREE BUF
+			return (free(buf), NULL); // FREE BUF !!!!!!!
 		buf[r] = '\0';
 		temp = ft_strjoin(temp, buf);
 	}
-	free(buf);
+	free (buf);
 	if (!temp)
 		return (NULL);
 	line = ft_newline(temp);
