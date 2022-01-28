@@ -6,12 +6,12 @@
 /*   By: cvidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:14:07 by cvidon            #+#    #+#             */
-/*   Updated: 2022/01/18 19:14:09 by cvidon           ###   ########.fr       */
+/*   Updated: 2022/01/28 13:40:09 by cvidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
 
-char	*newline(char *temp)
+static char	*newline(char *temp)
 {
 	size_t	i;
 
@@ -25,7 +25,7 @@ char	*newline(char *temp)
 	return (ft_substr(temp, 0, i));
 }
 
-char	*newtemp(char *temp)
+static char	*newtemp(char *temp)
 {
 	char	*new;
 	size_t	i;

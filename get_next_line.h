@@ -6,26 +6,56 @@
 /*   By: cvidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:14:07 by cvidon            #+#    #+#             */
-/*   Updated: 2022/01/18 19:14:09 by cvidon           ###   ########.fr       */
+/*   Updated: 2022/01/28 13:40:17 by cvidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-/* Prod */
+/*
+ ** =========[ Defines ]===========
+ */
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 2048
+# endif
+
+/*
+ ** =========[ Includes ]==========
+ */
+
+/*
+ ** Prod
+ */
+
 # include <unistd.h>
 # include <stdlib.h>
-/* Dev */
+
+/*
+ ** Dev
+ */
+
 # include <printf.h>
 # include <fcntl.h>
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
-# endif
+/*
+ ** =========[ Prototypes ]========
+ **
+ ** Commented function means static function.
+ */
 
-/* get_next_line.c */
+/*
+ ** [ GET_NEXT_LINE.C ]
+ */
+
+/* char	*newline(char *temp) */
+/* char	*newtemp(char *temp) */
 char	*get_next_line(int fd);
-/* get_next_line_utils.c */
+
+/*
+ ** [ GET_NEXT_LINE_UTILS.C ]
+ */
+
 int		ft_has_nl(char *str);
 size_t	ft_strlen(char *str);
 char	*ft_strdup(char *str);

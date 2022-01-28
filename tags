@@ -4,154 +4,24 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-.DEFAULT_GOAL	tester/Makefile	/^.DEFAULT_GOAL			= a$/;"	m
-10MBONUS	tester/Makefile	/^10MBONUS				= $(addprefix 10M, $(BONUS))$/;"	m
-10MMANDATORY	tester/Makefile	/^10MMANDATORY			= $(addprefix 10M, $(MANDATORY))$/;"	m
-10MMBONUS	tester/Makefile	/^10MMBONUS				= $(addprefix m10M, $(BONUS))$/;"	m
-1BONUS	tester/Makefile	/^1BONUS					= $(addprefix 1, $(BONUS))$/;"	m
-1MANDATORY	tester/Makefile	/^1MANDATORY				= $(addprefix 1, $(MANDATORY))$/;"	m
-1MBONUS	tester/Makefile	/^1MBONUS					= $(addprefix m1, $(BONUS))$/;"	m
-42BONUS	tester/Makefile	/^42BONUS					= $(addprefix 42, $(BONUS))$/;"	m
-42MANDATORY	tester/Makefile	/^42MANDATORY				= $(addprefix 42, $(MANDATORY))$/;"	m
-42MBONUS	tester/Makefile	/^42MBONUS				= $(addprefix m42, $(BONUS))$/;"	m
-BG_BLACK	tester/utils/color.hpp	/^	BG_BLACK			= 40,$/;"	e	enum:Color
-BG_BLUE	tester/utils/color.hpp	/^	BG_BLUE				= 44,$/;"	e	enum:Color
-BG_CYAN	tester/utils/color.hpp	/^	BG_CYAN				= 46,$/;"	e	enum:Color
-BG_DEFAULT	tester/utils/color.hpp	/^	BG_DEFAULT			= 49,$/;"	e	enum:Color
-BG_DGRAY	tester/utils/color.hpp	/^	BG_DGRAY			= 100,$/;"	e	enum:Color
-BG_GREEN	tester/utils/color.hpp	/^	BG_GREEN			= 42,$/;"	e	enum:Color
-BG_LBLUE	tester/utils/color.hpp	/^	BG_LBLUE			= 104,$/;"	e	enum:Color
-BG_LCYAN	tester/utils/color.hpp	/^	BG_LCYAN			= 106,$/;"	e	enum:Color
-BG_LGRAY	tester/utils/color.hpp	/^	BG_LGRAY			= 47,$/;"	e	enum:Color
-BG_LGREEN	tester/utils/color.hpp	/^	BG_LGREEN			= 102,$/;"	e	enum:Color
-BG_LMAGENTA	tester/utils/color.hpp	/^	BG_LMAGENTA			= 105,$/;"	e	enum:Color
-BG_LRED	tester/utils/color.hpp	/^	BG_LRED				= 101,$/;"	e	enum:Color
-BG_LYELLOW	tester/utils/color.hpp	/^	BG_LYELLOW			= 103,$/;"	e	enum:Color
-BG_MAGENTA	tester/utils/color.hpp	/^	BG_MAGENTA			= 45,$/;"	e	enum:Color
-BG_RED	tester/utils/color.hpp	/^	BG_RED				= 41,$/;"	e	enum:Color
-BG_WHITE	tester/utils/color.hpp	/^	BG_WHITE			= 107$/;"	e	enum:Color
-BG_YELLOW	tester/utils/color.hpp	/^	BG_YELLOW 			= 43,$/;"	e	enum:Color
-BLINK	tester/utils/color.hpp	/^	BLINK				= 5,$/;"	e	enum:Color
-BOLD	tester/utils/color.hpp	/^	BOLD				= 1,$/;"	e	enum:Color
-BONUS	tester/Makefile	/^BONUS					= bonus$/;"	m
-BONUS_FILES	tester/Makefile	/^BONUS_FILES				= ..\/get_next_line_bonus.c ..\/get_next_line_utils_bonus.c$/;"	m
-BONUS_HEADER	tester/Makefile	/^BONUS_HEADER			= ..\/get_next_line_bonus.h$/;"	m
-BONUS_OBJS	tester/Makefile	/^BONUS_OBJS				= $(BONUS_FILES:..\/%.c=%.o)$/;"	m
 BUFFER_SIZE	bonus/get_next_line_bonus.h	/^#  define BUFFER_SIZE /;"	d
 BUFFER_SIZE	get_next_line.h	/^#  define BUFFER_SIZE /;"	d
-BUFFER_SIZE	oldbonus/get_next_line_bonus.h	/^#  define BUFFER_SIZE /;"	d
-BUFFER_SIZE	tester/get_next_line.h	/^#  define BUFFER_SIZE /;"	d
-CFLAGS	tester/Makefile	/^CFLAGS					= -g3 -Wall -Wextra -Werror$/;"	m
-CHECK_HPP	tester/utils/check.hpp	/^# define CHECK_HPP$/;"	d
-COLOR_HPP	tester/utils/color.hpp	/^# define COLOR_HPP$/;"	d
-CPPFLAGS	tester/Makefile	/^CPPFLAGS				= -g3 -ldl -std=c++11 -I utils\/ -I.. -Wno-everything$/;"	m
-Color	tester/utils/color.hpp	/^enum Color$/;"	g
-DIM	tester/utils/color.hpp	/^	DIM					= 2,$/;"	e	enum:Color
-ENDL	tester/utils/color.hpp	/^# define ENDL /;"	d
-FG_BLACK	tester/utils/color.hpp	/^	FG_BLACK			= 30,$/;"	e	enum:Color
-FG_BLUE	tester/utils/color.hpp	/^	FG_BLUE				= 34,$/;"	e	enum:Color
-FG_CYAN	tester/utils/color.hpp	/^	FG_CYAN				= 36,$/;"	e	enum:Color
-FG_DEFAULT	tester/utils/color.hpp	/^	FG_DEFAULT			= 39,$/;"	e	enum:Color
-FG_DGRAY	tester/utils/color.hpp	/^	FG_DGRAY			= 90,$/;"	e	enum:Color
-FG_GREEN	tester/utils/color.hpp	/^	FG_GREEN			= 32,$/;"	e	enum:Color
-FG_LBLUE	tester/utils/color.hpp	/^	FG_LBLUE			= 94,$/;"	e	enum:Color
-FG_LCYAN	tester/utils/color.hpp	/^	FG_LCYAN			= 96,$/;"	e	enum:Color
-FG_LGRAY	tester/utils/color.hpp	/^	FG_LGRAY			= 37,$/;"	e	enum:Color
-FG_LGREEN	tester/utils/color.hpp	/^	FG_LGREEN			= 92,$/;"	e	enum:Color
-FG_LMAGENTA	tester/utils/color.hpp	/^	FG_LMAGENTA			= 95,$/;"	e	enum:Color
-FG_LRED	tester/utils/color.hpp	/^	FG_LRED				= 91,$/;"	e	enum:Color
-FG_LYELLOW	tester/utils/color.hpp	/^	FG_LYELLOW			= 93,$/;"	e	enum:Color
-FG_MAGENTA	tester/utils/color.hpp	/^	FG_MAGENTA			= 35,$/;"	e	enum:Color
-FG_RED	tester/utils/color.hpp	/^	FG_RED				= 31,$/;"	e	enum:Color
-FG_WHITE	tester/utils/color.hpp	/^	FG_WHITE			= 97,$/;"	e	enum:Color
-FG_YELLOW	tester/utils/color.hpp	/^	FG_YELLOW 			= 33,$/;"	e	enum:Color
 GET_NEXT_LINE_BONUS_H	bonus/get_next_line_bonus.h	/^# define GET_NEXT_LINE_BONUS_H$/;"	d
-GET_NEXT_LINE_BONUS_H	oldbonus/get_next_line_bonus.h	/^# define GET_NEXT_LINE_BONUS_H$/;"	d
 GET_NEXT_LINE_H	get_next_line.h	/^# define GET_NEXT_LINE_H$/;"	d
-GET_NEXT_LINE_H	tester/get_next_line.h	/^# define GET_NEXT_LINE_H$/;"	d
-GNL_HPP	tester/utils/gnl.hpp	/^# define GNL_HPP$/;"	d
-HIDDEN	tester/utils/color.hpp	/^	HIDDEN				= 8,$/;"	e	enum:Color
-LEAK_HPP	tester/utils/leaks.hpp	/^# define LEAK_HPP$/;"	d
-MANDATORY	tester/Makefile	/^MANDATORY				= mandatory$/;"	m
-MANDATORY_FILES	tester/Makefile	/^MANDATORY_FILES			= ..\/get_next_line.c ..\/get_next_line_utils.c$/;"	m
-MANDATORY_HEADER	tester/Makefile	/^MANDATORY_HEADER		= ..\/get_next_line.h$/;"	m
-MANDATORY_OBJS	tester/Makefile	/^MANDATORY_OBJS			= $(MANDATORY_FILES:..\/%.c=%.o)$/;"	m
-RESET_ALL	tester/utils/color.hpp	/^	RESET_ALL			= 0,$/;"	e	enum:Color
-RESET_BLINK	tester/utils/color.hpp	/^	RESET_BLINK			= 25,$/;"	e	enum:Color
-RESET_BOLD	tester/utils/color.hpp	/^	RESET_BOLD			= 21,$/;"	e	enum:Color
-RESET_DIM	tester/utils/color.hpp	/^	RESET_DIM			= 22,$/;"	e	enum:Color
-RESET_HIDDEN	tester/utils/color.hpp	/^	RESET_HIDDEN		= 28,$/;"	e	enum:Color
-RESET_REVERSED	tester/utils/color.hpp	/^	RESET_REVERSED		= 27,$/;"	e	enum:Color
-RESET_UNDERLINED	tester/utils/color.hpp	/^	RESET_UNDERLINED	= 24,$/;"	e	enum:Color
-REVERSED	tester/utils/color.hpp	/^	REVERSED			= 7,$/;"	e	enum:Color
-SHELL	tester/Makefile	/^SHELL					= bash$/;"	m
-SIGSEGV_HPP	tester/utils/sigsegv.hpp	/^# define SIGSEGV_HPP$/;"	d
-TEST	tester/utils/gnl.hpp	/^#define TEST(/;"	d
-TESTS_PATH	tester/Makefile	/^TESTS_PATH				= tests\/$/;"	m
-TIMEOUT_US	tester/Makefile	/^TIMEOUT_US				= 1000000$/;"	m
-UNAME	tester/Makefile	/^UNAME = $(shell uname -s)$/;"	m
-UNDERLINED	tester/utils/color.hpp	/^	UNDERLINED			= 4,$/;"	e	enum:Color
-UTILS	tester/Makefile	/^UTILS					= utils\/sigsegv.cpp utils\/color.cpp utils\/check.cpp utils\/gnl.cpp utils\/leaks.cpp$/;"	m
-VALGRIND	tester/Makefile	/^    VALGRIND = valgrind -q --leak-check=full$/;"	m
-check	tester/utils/check.cpp	/^void check(bool succes)$/;"	f
-free	tester/utils/leaks.cpp	/^void free(void * p) throw()$/;"	f
-ft_free	oldbonus/get_next_line_utils_bonus.c	/^void	*ft_free(void *str)$/;"	f
-ft_get_line	oldbonus/get_next_line_bonus.c	/^char	*ft_get_line(char *temp)$/;"	f
 ft_has_nl	bonus/get_next_line_utils_bonus.c	/^int	ft_has_nl(char *str)$/;"	f
 ft_has_nl	get_next_line_utils.c	/^int	ft_has_nl(char *str)$/;"	f
-ft_has_nl	tester/get_next_line_utils.c	/^int	ft_has_nl(char *str)$/;"	f
-ft_locate_nl	oldbonus/get_next_line_bonus.c	/^int	ft_locate_nl(char *str)$/;"	f
 ft_strdup	bonus/get_next_line_utils_bonus.c	/^char	*ft_strdup(char *s1)$/;"	f
 ft_strdup	get_next_line_utils.c	/^char	*ft_strdup(char *s1)$/;"	f
-ft_strdup	oldbonus/get_next_line_utils_bonus.c	/^char	*ft_strdup(const char *s1)$/;"	f
-ft_strdup	tester/get_next_line_utils.c	/^char	*ft_strdup(char *s1)$/;"	f
 ft_strjoin	bonus/get_next_line_utils_bonus.c	/^char	*ft_strjoin(char *s1, char *s2)$/;"	f
 ft_strjoin	get_next_line_utils.c	/^char	*ft_strjoin(char *s1, char *s2)$/;"	f
-ft_strjoin	oldbonus/get_next_line_utils_bonus.c	/^char	*ft_strjoin(char *s1, char *s2)$/;"	f
-ft_strjoin	tester/get_next_line_utils.c	/^char	*ft_strjoin(char *s1, char *s2)$/;"	f
 ft_strlen	bonus/get_next_line_utils_bonus.c	/^size_t	ft_strlen(char *str)$/;"	f
 ft_strlen	get_next_line_utils.c	/^size_t	ft_strlen(char *str)$/;"	f
-ft_strlen	oldbonus/get_next_line_utils_bonus.c	/^size_t	ft_strlen(const char *s)$/;"	f
-ft_strlen	tester/get_next_line_utils.c	/^size_t	ft_strlen(char *str)$/;"	f
 ft_substr	bonus/get_next_line_utils_bonus.c	/^char	*ft_substr(char *s, size_t start, size_t len)$/;"	f
 ft_substr	get_next_line_utils.c	/^char	*ft_substr(char *s, size_t start, size_t len)$/;"	f
-ft_substr	oldbonus/get_next_line_utils_bonus.c	/^char	*ft_substr(char *s, unsigned int start, size_t len)$/;"	f
-ft_substr	tester/get_next_line_utils.c	/^char	*ft_substr(char *s, size_t start, size_t len)$/;"	f
-ft_update_temp	oldbonus/get_next_line_bonus.c	/^char	*ft_update_temp(char *temp)$/;"	f
 get_next_line	bonus/get_next_line_bonus.c	/^char	*get_next_line(int fd)$/;"	f
 get_next_line	get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
-get_next_line	oldbonus/get_next_line_bonus.c	/^char	*get_next_line(int fd)$/;"	f
-get_next_line	tester/get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
-gnl	tester/utils/gnl.cpp	/^void gnl(int fd, char const * expectedReturn)$/;"	f
-iTest	tester/tests/bonus.cpp	/^int iTest = 1;$/;"	v
-iTest	tester/tests/mandatory.cpp	/^int iTest = 1;$/;"	v
 main	main.c	/^int	main(void)$/;"	f
-main	tester/main.c	/^int	main(void)$/;"	f
-main	tester/tests/bonus.cpp	/^int main(void)$/;"	f
-main	tester/tests/mandatory.cpp	/^int main(void)$/;"	f
-malloc	tester/utils/leaks.cpp	/^void * malloc(size_t size) throw()$/;"	f
-mallocList	tester/utils/leaks.cpp	/^std::vector<ptr> mallocList;$/;"	v
-mallocListAdd	tester/utils/leaks.cpp	/^void mallocListAdd(void * p, size_t size)$/;"	f
-mallocListRemove	tester/utils/leaks.cpp	/^void mallocListRemove(void * p)$/;"	f
-mcheck	tester/utils/check.cpp	/^void mcheck(void * p, size_t required_size)$/;"	f
-new	tester/tests/bonus.cpp	/^#define new /;"	d	file:
-new	tester/tests/bonus.cpp	/^#undef new$/;"	d	file:
-new	tester/tests/mandatory.cpp	/^#define new /;"	d	file:
-new	tester/tests/mandatory.cpp	/^#undef new$/;"	d	file:
-new	tester/utils/gnl.cpp	/^#define new /;"	d	file:
-new	tester/utils/gnl.cpp	/^#undef new$/;"	d	file:
 newline	bonus/get_next_line_bonus.c	/^char	*newline(char *temp)$/;"	f
-newline	get_next_line.c	/^char	*newline(char *temp)$/;"	f
-newline	tester/get_next_line.c	/^char	*newline(char *temp)$/;"	f
+newline	get_next_line.c	/^static char	*newline(char *temp)$/;"	f	file:
 newtemp	bonus/get_next_line_bonus.c	/^char	*newtemp(char *temp)$/;"	f
-newtemp	get_next_line.c	/^char	*newtemp(char *temp)$/;"	f
-newtemp	tester/get_next_line.c	/^char	*newtemp(char *temp)$/;"	f
-operator <<	tester/utils/color.cpp	/^operator<<(std::ostream & os, Color c)$/;"	f
-operator ==	tester/utils/leaks.cpp	/^bool operator==(ptr const & p1, ptr const & p2)$/;"	f
-p	tester/utils/leaks.hpp	/^	void * p;$/;"	m	struct:ptr
-ptr	tester/utils/leaks.hpp	/^	ptr(void * _p = 0, size_t _size = 0) : p(_p), size(_size) {}$/;"	f	struct:ptr
-ptr	tester/utils/leaks.hpp	/^struct ptr$/;"	s
-showLeaks	tester/utils/leaks.cpp	/^void showLeaks(void)$/;"	f
-sigsegv	tester/utils/sigsegv.cpp	/^void sigsegv(int signal)$/;"	f
-size	tester/utils/leaks.hpp	/^	size_t size;$/;"	m	struct:ptr
-title	tester/utils/check.hpp	/^# define title(/;"	d
+newtemp	get_next_line.c	/^static char	*newtemp(char *temp)$/;"	f	file:
