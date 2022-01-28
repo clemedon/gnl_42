@@ -6,7 +6,7 @@
 /*   By: cvidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:14:07 by cvidon            #+#    #+#             */
-/*   Updated: 2022/01/28 13:40:17 by cvidon           ###   ########.fr       */
+/*   Updated: 2022/01/28 18:18:38 by clem9nt          888   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef GET_NEXT_LINE_H
@@ -24,19 +24,9 @@
  ** =========[ Includes ]==========
  */
 
-/*
- ** Prod
- */
-
 # include <unistd.h>
 # include <stdlib.h>
-
-/*
- ** Dev
- */
-
-# include <printf.h>
-# include <fcntl.h>
+# include <limits.h>
 
 /*
  ** =========[ Prototypes ]========
@@ -57,9 +47,9 @@ char	*get_next_line(int fd);
  */
 
 int		ft_has_nl(char *str);
-size_t	ft_strlen(char *str);
-char	*ft_strdup(char *str);
-char	*ft_strjoin(char *s1, char *s2);
-char	*ft_substr(char *s, size_t start, size_t len);
+size_t	ft_strlen_gnl(char *str);
+char	*ft_strdup_gnl(char *str);
+char	*ft_strjoin_gnl(char *s1, char *s2);
+char	*ft_substr_gnl(char *s, size_t start, size_t len);
 
 #endif
