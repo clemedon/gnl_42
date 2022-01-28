@@ -6,9 +6,10 @@
 /*   By: cvidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:14:07 by cvidon            #+#    #+#             */
-/*   Updated: 2022/01/28 18:16:57 by clem9nt          888   ########.fr       */
+/*   Updated: 2022/01/28 18:40:33 by clem9nt          888   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "get_next_line.h"
 
 static char	*newline(char *temp)
