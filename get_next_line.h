@@ -6,12 +6,20 @@
 /*   By: cvidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:14:07 by cvidon            #+#    #+#             */
-/*   Updated: 2022/01/28 18:40:37 by clem9nt          888   ########.fr       */
+/*   Updated: 2022/02/08 15:59:42 by cvidon           888   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
+
+/*
+ ** =========[ Includes ]==========
+ */
+
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
 
 /*
  ** =========[ Defines ]===========
@@ -21,13 +29,9 @@
 #  define BUFFER_SIZE 2048
 # endif
 
-/*
- ** =========[ Includes ]==========
- */
-
-# include <unistd.h>
-# include <stdlib.h>
-# include <limits.h>
+# ifndef OPEN_MAX
+#  define OPEN_MAX 1024
+# endif
 
 /*
  ** =========[ Prototypes ]========
